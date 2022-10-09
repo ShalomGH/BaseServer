@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <style>
+        body {
+            text-align: center;
+            font-family: "Century Gothic";
+            height: 100%;
+            width: 100%;
+            background: #eff0d1;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            font-size: 90px;
+        }
+
+        .container-1 {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            padding: 5%;
+            display: grid;
+            grid-template-rows: 1fr 5fr 1fr 5fr;
+            grid-row-gap: 1em;
+        }
+
+        .flat-2 {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 4em;
+        }
+
+        input {
+            width: 100%;
+            height: 100%;
+            background: #77ba99;
+            border: 0;
+            font-size: 80px;
+            border-radius: 30px;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>PoolLights</title>
+</head>
+<body>
+<div class="container-1">
+    <div class="flat-1">
+        <h1>Ворота</h1>
+    </div>
+    <div class="flat-2">
+        <input type="button" value="On" class="r-" onclick="fetch('10.0.90.73/')">
+    </div>
+    <div class="flat-1">
+        <h1>Калитка</h1>
+    </div>
+    <div class="flat-2">
+        <input type="button" value="On" class="r-" onclick="fetch('10.0.90.73/')">
+    </div>
+</div>
+</body>
+</html>
